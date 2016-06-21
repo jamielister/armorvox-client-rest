@@ -1,8 +1,8 @@
-The "Armorvox-Client-Rest" project is open software designed as an exemplar and starting-point for partners and customers using Auraya's ArmorVox speaker recognition cloud service.
+The "Armorvox-Client-Rest" project is open software designed as an exemplar and starting-point for partners and customers using Auraya's ArmorVox speaker recognition RESTful cloud service.
 
 See https://cloud.armorvox.com/  for details.
 
-It is a command-line tool that calls each of the APIs of the ArmorVox server.
+It is a command-line tool that calls each of the APIs of the ArmorVox REST service.
 
 Identities (IDs) and audio are expected to be organised as follows:
 
@@ -38,8 +38,9 @@ To get a list of all the options, just run the executable without any:
 >java -jar armorvox-client.jar 
 
 For a typical enrolment, from the generated 'target' folder, run:
->java -jar armorvox-client.jar -l ../example_data/enrol.txt -s https://cloud.armorvox.com/eval_server/vxml/v1 -a ae
+>java -jar armorvox-client.jar -l ../example_data/enrol.txt -s https://cloud.armorvox.com/eval_server/json/v1 -a ci
+>java -jar armorvox-client.jar -l ../example_data/enrol.txt -s https://cloud.armorvox.com/eval_server/json/v1 -a cvp
 
 For verification
->java -jar armorvox-client.jar -l ../example_data/verify.txt -s https://cloud.armorvox.com/eval_server/vxml/v1 -a av
+>java -jar armorvox-client.jar -l ../example_data/verify.txt -s https://cloud.armorvox.com/eval_server/json/v1 -a vvp
 
